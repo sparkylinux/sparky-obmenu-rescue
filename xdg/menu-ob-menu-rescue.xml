@@ -1,0 +1,655 @@
+<!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
+     Last update 2019/10/22 -->
+<openbox_menu>
+  <menu id="desktop-app-menu" label="Applications" />
+  <menu id="root-menu" label="Openbox 3">
+    <item id="rescue" label="Rescue tools">
+    </item>
+    <!-- Backup -->
+    <menu id="backup" label="Backup" icon='/usr/share/icons/Tela/scalable/apps/luckybackup.svg'>
+      <item label="Clonezilla" icon='/usr/share/icons/Tela/scalable/apps/applications-development.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec clonezilla</command>
+        </action>
+      </item>
+      <item label="DDRescue GUI" icon='/usr/share/pixmaps/ddrescue-gui.png'>
+        <action name="Execute"><command>/usr/share/ddrescue-gui/DDRescue_GUI.py</command>
+        </action>
+      </item>
+      <item label="Grsync" icon='/usr/share/icons/Tela/scalable/apps/grsync.svg'>
+        <action name="Execute"><command>grsync</command>
+        </action>
+      </item>
+      <item label="luckyBackup" icon='/usr/share/icons/Tela/scalable/apps/luckybackup.svg'>
+        <action name="Execute"><command>luckybackup</command>
+        </action>
+      </item>
+      <item label="qt-fsarchiver" icon='/usr/share/app-install/icons/harddrive2.png'>
+        <action name="Execute"><command>/usr/sbin/qt-fsarchiver</command>
+        </action>
+      </item>
+      <item label="Redo Backup" icon='/usr/share/pixmaps/redobackup.png'>
+        <action name="Execute"><command>remsu sparky-remsu-exec redobackup</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Backup end -->
+    <!-- Bootloader -->
+    <menu id="bootloader" label="Bootloader" icon='/usr/share/icons/Tela/scalable/apps/grub-customizer.svg'>
+      <item label="Boot Repair" icon='/usr/share/boot-sav/x-boot-repair.png'>
+        <action name="Execute"><command>remsu sparky-remsu-exec boot-repair</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Bootloader end -->
+    <!-- Chroot -->
+    <menu id="chroot" label="Chroot" icon='/usr/share/icons/Tela/scalable/apps/utilities-terminal.svg'>
+      <item label="Chrooter" icon='/usr/share/icons/Tela/scalable/apps/utilities-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-chrooter</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Chroot end -->
+    <!-- Disk -->
+    <menu id="disk" label="Disk" icon='/usr/share/icons/Tela/scalable/apps/gparted.svg'>
+      <item label="Cfdisk" icon='/usr/share/icons/Tela/scalable/devices/drive-harddisk.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec cfdisk</command>
+        </action>
+      </item>
+      <item label="Disk Manager" icon='/usr/share/icons/Tela/scalable/devices/drive-harddisk.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec disk-manager</command>
+        </action>
+      </item>
+      <item label="Disk Usage Analyser" icon='/usr/share/icons/Tela/scalable/apps/baobab.svg'>
+        <action name="Execute"><command>baobab</command>
+        </action>
+      </item>
+      <item label="GParted" icon='/usr/share/icons/Tela/scalable/apps/gparted.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec gparted</command>
+        </action>
+      </item>
+      <item label="GSmartControl" icon='/usr/share/icons/Tela/scalable/apps/gsmartcontrol.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec gsmartcontrol</command>
+        </action>
+      </item>
+      <item label="Logical Volume Management" icon='/usr/share/system-config-lvm/pixmaps/lv_icon.png'>
+        <action name="Execute"><command>remsu sparky-remsu-exec system-config-lvm</command>
+        </action>
+      </item>
+      <item label="TestDisk" icon='/usr/share/icons/Tela/scalable/apps/utilities-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec testdisk</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Disk end -->
+    <!-- Encryption -->
+    <menu id="encription" label="Encription" icon='/usr/share/pixmaps/veracrypt.xpm'>
+      <item label="VeraCrypt" icon='/usr/share/pixmaps/veracrypt.xpm'>
+        <action name="Execute"><command>veracrypt</command>
+        </action>
+      </item>
+      <item label="zuluCrypt GUI" icon='/usr/share/pixmaps/zuluCrypt.xpm'>
+        <action name="Execute"><command>zuluCrypt-gui</command>
+        </action>
+      </item>
+      <item label="zuluMount GUI" icon='/usr/share/pixmaps/zuluMount.xpm'>
+        <action name="Execute"><command>zuluMount-gui</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Encryption end -->
+    <!-- Files -->
+    <menu id="files" label="Files" icon='/usr/share/icons/Tela/scalable/places/folder.svg'>
+      <item label="Eraser" icon='/usr/share/icons/Tela/scalable/places/user-trash-full.svg'>
+        <action name="Execute"><command>sparky-eraser</command>
+        </action>
+      </item>
+      <item label="Files" icon='/usr/share/icons/Tela/scalable/places/folder.svg'>
+        <action name="Execute"><command>sparky-fileopen</command>
+        </action>
+      </item>
+      <item label="Midnight Commander" icon='/usr/share/pixmaps/mc.xpm'>
+        <action name="Execute"><command>sparky-xterm mc</command>
+        </action>
+      </item>
+      <item label="PhotoRec" icon='/usr/share/icons/Tela/scalable/apps/terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec photorec</command>
+        </action>
+      </item>
+      <item label="TUX Commander" icon='/usr/share/icons/hicolor/scalable/apps/tuxcmd.svg'>
+        <action name="Execute"><command>tuxcmd</command>
+        </action>
+      </item>
+      <item label="Xarchiver" icon='/usr/share/icons/Tela/scalable/apps/xarchiver.svg'>
+        <action name="Execute"><command>xarchiver</command>
+        </action>
+      </item>
+    <separator />
+      <item label="Root Eraser" icon='/usr/share/icons/Tela/scalable/places/user-trash-full.svg'>
+        <action name="Execute"><command>remsu sparky-eraser</command>
+        </action>
+      </item>
+      <item label="Root Files" icon='/usr/share/icons/Tela/scalable/places/folder_color_red.svg'>
+        <action name="Execute"><command>remsu sparky-fileopen</command>
+        </action>
+      </item>
+      <item label="Root Midnight Commander" icon='/usr/share/icons/Tela/scalable/places/folder_color_red.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec mc</command>
+        </action>
+      </item>
+      <item label="Root TUX Commander" icon='/usr/share/icons/hicolor/scalable/apps/tuxcmd.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec tuxcmd</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Files end -->
+    <!-- Malware -->
+    <menu id="malware" label="Malware" icon='/usr/share/icons/Tela/scalable/apps/gnibbles.svg'>
+      <item label="ClamTK" icon='/usr/share/icons/Tela/scalable/apps/clamtk.svg'>
+        <action name="Execute"><command>clamtk</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Malware end -->
+    <!-- Monitoring -->
+    <menu id="monitoring" label="Monitoring" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
+      <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
+        <action name="Execute"><command>sparky-xterm htop</command>
+        </action>
+      </item>
+      <item label="nmon" icon='/usr/share/icons/Tela/scalable/apps/utilities-system-monitor.svg'>
+        <action name="Execute"><command>sparky-xterm nmon</command>
+        </action>
+      </item>
+      <item label="LXtask" icon='/usr/share/icons/Tela/scalable/apps/utilities-system-monitor.svg'>
+        <action name="Execute"><command>lxtask</command>
+        </action>
+      </item>
+      <item label="top" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
+        <action name="Execute"><command>sparky-xterm top</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Monitoring end -->
+    <!-- Passwords -->
+    <menu id="passwords" label="Passwords MS Windows" icon='/usr/share/icons/Tela/scalable/apps/security-medium.svg'>
+      <item label="ophcrack" icon='/usr/share/pixmaps/ophcrack.xpm'>
+        <action name="Execute"><command>ophcrack</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Password end -->
+    <!-- Remote -->
+    <menu id="remote" label="Remote Desktop" icon='/usr/share/icons/Tela/scalable/places/folder-network.svg'>
+      <item label="Gigolo" icon='/usr/share/icons/Tela/scalable/places/gtk-network.svg'>
+        <action name="Execute"><command>gigolo</command>
+        </action>
+      </item>
+      <item label="rdesktop GUI" icon='/usr/share/pixmaps/grdesktop.png'>
+        <action name="Execute"><command>grdesktop</command>
+        </action>
+      </item>
+      <item label="Remmina" icon='/usr/share/icons/Tela/scalable/apps/remmina.svg'>
+        <action name="Execute"><command>remmina</command>
+        </action>
+      </item>
+      <item label="TeamViewer" icon='/usr/share/icons/Tela/scalable/apps/teamviewer.svg'>
+        <action name="Execute"><command>/opt/sparky-teamviewer/teamviewer-launcher</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Remote end -->
+    <!-- Terminals -->
+    <menu id="terminal" label="Terminal Emulators" icon='/usr/share/icons/Tela/scalable/apps/terminal.svg'>
+      <item label="Lxterminal" icon='/usr/share/icons/Tela/scalable/apps/lxterminal.svg'>
+        <action name="Execute"><command>lxterminal</command>
+        </action>
+      </item>
+      <item label="UXTerm" icon='/usr/share/icons/Tela/scalable/apps/terminal.svg'>
+        <action name="Execute"><command>uxterm</command>
+        </action>
+      </item>
+      <item label="XTerm" icon='/usr/share/icons/Tela/scalable/apps/terminal.svg'>
+        <action name="Execute"><command>xterm</command>
+        </action>
+      </item>
+    <separator />
+      <item label="Root Lxterminal" icon='/usr/share/icons/Tela/scalable/apps/gksu-root-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec lxterminal</command>
+        </action>
+      </item>
+      <item label="Root UXTerm" icon='/usr/share/icons/Tela/scalable/apps/gksu-root-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec uxterm</command>
+        </action>
+      </item>
+      <item label="Root XTerm" icon='/usr/share/icons/Tela/scalable/apps/gksu-root-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec xterm</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Terminal end -->
+    <separator />
+    <!-- Help -->
+    <menu id="quick-help" label="Quick Help" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+
+      <menu id="help-backup" label="Backup Help" icon='/usr/share/icons/Tela/scalable/apps/luckybackup.svg'>
+        <item label="Clonezilla (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser http://clonezilla.org/fine-print-live-doc.php?path=./clonezilla-live/doc/01_Save_disk_image/05-start-clonezilla-or-cmd.doc#05-start-clonezilla-or-cmd.doc</command>
+          </action>
+        </item>
+        <item label="DDRescue" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser /usr/share/doc/gddrescue/html/index.html</command>
+          </action>
+        </item>
+        <item label="FSArchiver" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man fsarchiver</command>
+          </action>
+        </item>
+        <item label="Grsync" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man grsync</command>
+          </action>
+        </item>
+        <item label="luckyBackup" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser /usr/share/doc/luckybackup/manual/index.html</command>
+          </action>
+        </item>
+        <item label="Partclone" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man partclone</command>
+          </action>
+        </item>
+        <item label="Partimage" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man partimage</command>
+          </action>
+        </item>
+        <item label="Partimage Server" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man partimaged</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-bootloader" label="Bootloader Help" icon='/usr/share/icons/Tela/scalable/apps/grub-customizer.svg'>
+        <item label="Boot Repair" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+        <action name="Execute"><command>sparky-xterm man boot-repair</command>
+        </action>
+      </item>
+      </menu>
+
+      <menu id="help-chroot" label="Chroot Help" icon='/usr/share/icons/Tela/scalable/apps/terminal.svg'>
+        <item label="Chroot" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man chroot</command>
+          </action>
+        </item>
+        <item label="Chrooter" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>/opt/sparky/sparky-chrooter-help</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-disk" label="Disk Help" icon='/usr/share/icons/Tela/scalable/apps/gparted.svg'>
+        <item label="Baobab" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man baobab</command>
+          </action>
+        </item>
+        <item label="Cfdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man cfdisk</command>
+          </action>
+        </item>
+        <item label="Disk Manager" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man disk-manager</command>
+          </action>
+        </item>
+        <item label="Disktype" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man disktype</command>
+          </action>
+        </item>
+        <item label="Fdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man fdisk</command>
+          </action>
+        </item>
+        <item label="Gdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man gdisk</command>
+          </action>
+        </item>
+        <item label="GParted" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man gparted</command>
+          </action>
+        </item>
+        <item label="GSmartControl" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man gsmartcontrol</command>
+          </action>
+        </item>
+        <item label="LVM2" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man lvm</command>
+          </action>
+        </item>
+        <item label="mdadm" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man mdadm</command>
+          </action>
+        </item>
+        <item label="Parted" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man parted</command>
+          </action>
+        </item>
+        <item label="Smartmontools" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man smartctl</command>
+          </action>
+        </item>
+        <item label="Smart-Notifier" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man smart-notifier</command>
+          </action>
+        </item>
+        <item label="System Config LVM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man system-config-lvm</command>
+          </action>
+        </item>
+        <item label="TestDisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man testdisk</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-encrypt" label="Encryption Help" icon='/usr/share/icons/Tela/scalable/apps/truecrypt.svg'>
+        <item label="Cryptmount" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man cryptmount</command>
+          </action>
+        </item>
+        <item label="Cryptsetup" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man cryptsetup</command>
+          </action>
+        </item>
+        <item label="eCryptfs Manager" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man ecryptfs-manager</command>
+          </action>
+        </item>
+        <item label="Tcplay" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man tcplay</command>
+          </action>
+        </item>
+        <item label="VeraCrypt" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser file:///usr/share/veracrypt/doc/HTML/Documentation.html</command>
+          </action>
+        </item>
+        <item label="zuluCrypt" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>qpdfview /usr/share/zuluCrypt/zuluCrypt.pdf</command>
+          </action>
+        </item>
+        <item label="zuluMount" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man zuluMount-gui</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-malware" label="Malware Help" icon='/usr/share/icons/Tela/scalable/apps/gnibbles.svg'>
+        <item label="Chkrootkit" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man chkrootkit</command>
+          </action>
+        </item>
+        <item label="ClamAV" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man clamscan</command>
+          </action>
+        </item>
+        <item label="ClamTK" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man clamtk</command>
+          </action>
+        </item>
+        <item label="Rkhunter" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man rkhunter</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-monitoring" label="Monitoring Help" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
+        <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man htop</command>
+          </action>
+        </item>
+        <item label="inxi" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man inxi</command>
+          </action>
+        </item>
+        <item label="nmon" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man nmon</command>
+          </action>
+        </item>
+        <item label="sensors" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man sensors</command>
+          </action>
+        </item>
+        <item label="Task Manager" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man lxtask</command>
+          </action>
+        </item>
+        <item label="top" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man top</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-network" label="Network Help" icon='/usr/share/icons/Tela/scalable/apps/preferences-system-network.svg'>
+        <item label="Samba Client" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man smbclient</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-package" label="Package Managers Help" icon='/usr/share/icons/Tela/scalable/apps/package-manager-icon.svg'>
+        <item label="APT" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man apt</command>
+          </action>
+        </item>
+        <item label="DPKG" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man dpkg</command>
+          </action>
+        </item>
+        <item label="RPM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man rpm</command>
+          </action>
+        </item>
+        <item label="YUM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man yum</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-win" label="Passwords MS Windows Help" icon='/usr/share/icons/Tela/scalable/apps/security-medium.svg'>
+        <item label="chntpw" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man chntpw</command>
+          </action>
+        </item>
+        <item label="ophcrack" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man ophcrack</command>
+          </action>
+        </item>
+      </menu>
+
+      <menu id="help-remote" label="Remote Desktop Help" icon='/usr/share/icons/Tela/scalable/places/folder-network.svg'>
+        <item label="DRBL" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man drblsrv</command>
+          </action>
+        </item>
+        <item label="Gigolo (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser http://www.uvena.de/gigolo/help.html</command>
+          </action>
+        </item>
+        <item label="rdesktop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man rdesktop</command>
+          </action>
+        </item>
+        <item label="rdesktop GUI" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser /usr/share/doc/grdesktop/FAQ.html</command>
+          </action>
+        </item>
+        <item label="Remmina" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man remmina</command>
+          </action>
+        </item>
+        <item label="TeamViewer (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
+          <action name="Execute"><command>x-www-browser https://www.teamviewer.com/en/help/firststeps.aspx</command>
+          </action>
+        </item>
+      </menu>
+
+    </menu>
+    <!-- Help end -->
+    <separator />
+
+    <!-- Apps -->
+    <item id="apps" label="Applications">
+    </item>
+    <!-- Accessories -->
+    <menu id="accessories" label="Accessories" icon='/usr/share/icons/Tela/scalable/apps/access.svg'>
+      <item label="Florence Virtual Keyboard" icon='/usr/share/pixmaps/florence.svg'>
+        <action name="Execute"><command>florence</command>
+        </action>
+      </item>
+      <item label="Image Viewer" icon='/usr/share/icons/Tela/scalable/apps/gthumb.svg'>
+        <action name="Execute"><command>gpicview</command>
+        </action>
+      </item>
+      <item label="Text Editor" icon='/usr/share/icons/Tela/scalable/apps/text-editor.svg'>
+        <action name="Execute"><command>sparky-editor</command>
+        </action>
+      </item>
+      <item label="Screenshot" icon='/usr/share/icons/Tela/scalable/apps/applets-screenshooter.svg'>
+        <action name="Execute"><command>gscreenshot</command>
+        </action>
+      </item>
+      <item label="Vim" icon='/usr/share/icons/Tela/scalable/apps/gvim.svg'>
+        <action name="Execute"><command>sparky-xterm vim</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Accessories end -->
+    <!-- Multimedia -->
+    <menu id="multimedia" label="Multimedia" icon='/usr/share/icons/Tela/scalable/apps/multimedia.svg'>
+      <item label="PulseAudio Volume Control" icon='/usr/share/icons/Tela/scalable/apps/pavucontrol.svg'>
+        <action name="Execute"><command>pavucontrol</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Multimedia end -->
+    <!-- Network -->
+    <menu id="network" label="Network" icon='/usr/share/icons/Tela/scalable/apps/applications-internet.svg'>
+      <item label="HexChat IRC client" icon='/usr/share/icons/Tela/scalable/apps/hexchat.svg'>
+        <action name="Execute"><command>hexchat</command>
+        </action>
+      </item>
+      <item label="Web browser" icon='/usr/share/icons/Tela/scalable/apps/web-browser.svg'>
+        <action name="Execute"><command>x-www-browser</command>
+        </action>
+      </item>
+      <item label="Windows Network" icon='/usr/share/icons/Tela/scalable/places/folder-network.svg'>
+        <action name="Execute"><command>thunar network:///</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Network end -->
+    <!-- Office -->
+    <menu id="office" label="Office" icon='/usr/share/icons/Tela/scalable/apps/applications-office.svg'>
+      <item label="qpdfview" icon='/usr/share/icons/Tela/scalable/apps/qpdfview.svg'>
+        <action name="Execute"><command>qpdfview</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Office end -->
+    <!-- Settings -->
+    <menu id="settings" label="Settings" icon='/usr/share/icons/Tela/scalable/apps/applications-accessories.svg'>
+      <item label="Firewall" icon='/usr/share/icons/Tela/scalable/apps/gufw.svg'>
+        <action name="Execute"><command>gufw</command>
+        </action>
+      </item>
+      <item label="Keyboard and Mouse" icon='/usr/share/icons/Tela/scalable/apps/input-keyboard.svg'>
+        <action name="Execute"><command>lxinput</command>
+        </action>
+      </item>
+      <item label="Monitor Settings" icon='/usr/share/icons/Tela/scalable/apps/preferences-desktop-display.svg'>
+        <action name="Execute"><command>lxrandr</command>
+        </action>
+      </item>
+      <item label="Network Connections" icon='/usr/share/icons/Tela/scalable/apps/preferences-system-network.svg'>
+        <action name="Execute"><command>nm-connection-editor</command>
+        </action>
+      </item>
+      <item label="ObConf" icon='/usr/share/icons/Tela/scalable/apps/obconf.svg'>
+        <action name="Execute"><command>obconf</command>
+        </action>
+      </item>
+      <item label="Print Settings" icon='/usr/share/icons/Tela/scalable/apps/printer.svg'>
+        <action name="Execute"><command>system-config-printer</command>
+        </action>
+      </item>
+      <item label="Screensaver" icon='/usr/share/icons/Tela/scalable/apps/xscreensaver.svg'>
+        <action name="Execute"><command>xscreensaver-demo</command>
+        </action>
+      </item>
+      <item label="Tint2 Config" icon='/usr/share/icons/Tela/scalable/apps/tint2conf.svg'>
+        <action name="Execute"><command>tint2conf</command>
+        </action>
+      </item>
+      <item label="Wallpaper" icon='/usr/share/icons/hicolor/48x48/apps/nitrogen.png'>
+        <action name="Execute"><command>nitrogen</command>
+        </action>
+      </item>
+    </menu>
+    <!-- Settings end -->
+    <!-- System -->
+    <menu id="system" label="System" icon='/usr/share/icons/Tela/scalable/apps/applications-system.svg'>
+      <item label="About SparkyLinux" icon='/usr/share/icons/sparky/about/sparky48.png'>
+        <action name="Execute"><command>sparky-about</command>
+        </action>
+      </item>
+      <item label="APTus" icon='/usr/share/icons/Tela/scalable/apps/system-software-install.svg'>
+        <action name="Execute"><command>remsu sparky-aptus</command>
+        </action>
+      </item>
+      <item label="Custom ISO Builder" icon='/usr/share/icons/Tela/scalable/devices/media-cdrom.svg'>
+        <action name="Execute"><command>remsu custom-iso-builder</command>
+        </action>
+      </item>
+      <item label="DEB Package Builder" icon='/usr/share/icons/Tela/scalable/mimetypes/gnome-mime-application-x-deb.svg'>
+        <action name="Execute"><command>remsu deb-package-builder</command>
+        </action>
+      </item>
+      <item label="Live USB Disk Creator" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
+        <action name="Execute"><command>remsu sparky-live-usb-creator</command>
+        </action>
+      </item>
+      <item label="Run command" icon='/usr/share/icons/Tela/scalable/apps/system-run.svg'>
+        <action name="Execute"><command>gexec</command>
+        </action>
+      </item>
+      <item label="Synaptic" icon='/usr/share/icons/Tela/scalable/apps/synaptic.svg'>
+        <action name="Execute"><command>synaptic-pkexec</command>
+        </action>
+      </item>
+      <item label="System Log" icon='/usr/share/icons/Tela/scalable/apps/logview.svg'>
+        <action name="Execute"><command>gnome-system-log-pkexec</command>
+        </action>
+      </item>
+      <item label="System Profiler and Benchmark" icon='/usr/share/hardinfo/pixmaps/logo.png'>
+        <action name="Execute"><command>hardinfo</command>
+        </action>
+      </item>
+      <item label="USB Disk Formatter" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
+        <action name="Execute"><command>remsu sparky-usb-formatter</command>
+        </action>
+      </item>
+      <item label="Xkill" icon='/usr/share/icons/Tela/scalable/apps/applications-other.svg'>
+        <action name="Execute"><command>xkill</command>
+        </action>
+      </item>
+    </menu>
+    <!-- System end -->
+  <separator />
+    <item label="Restart Openbox" icon='/usr/share/icons/Tela/scalable/apps/system-restart.svg'>
+      <action name="Restart"/>
+    </item>
+    <item label="Lock" icon='/usr/share/icons/Tela/scalable/apps/xscreensaver.svg'>
+      <action name="Execute"><command>xscreensaver-command -lock</command>
+      </action>
+    </item>
+    <item label="Exit" icon='/usr/share/icons/Tela/scalable/apps/system-shutdown.svg'>
+      <action name="Execute"><command>wm-logout</command>
+      </action>
+    </item>
+  </menu>
+</openbox_menu>
