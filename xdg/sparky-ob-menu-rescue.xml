@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2019/10/22 -->
+     Last update 2020/04/06 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -442,10 +442,6 @@
         </item>
         <item label="RPM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm man rpm</command>
-          </action>
-        </item>
-        <item label="YUM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
-          <action name="Execute"><command>sparky-xterm man yum</command>
           </action>
         </item>
       </menu>
