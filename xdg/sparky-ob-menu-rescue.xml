@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/04/06 -->
+     Last update 2020/04/26 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -25,10 +25,6 @@
       </item>
       <item label="qt-fsarchiver" icon='/usr/share/app-install/icons/harddrive2.png'>
         <action name="Execute"><command>/usr/sbin/qt-fsarchiver</command>
-        </action>
-      </item>
-      <item label="Redo Backup" icon='/usr/share/pixmaps/redobackup.png'>
-        <action name="Execute"><command>remsu sparky-remsu-exec redobackup</command>
         </action>
       </item>
     </menu>
