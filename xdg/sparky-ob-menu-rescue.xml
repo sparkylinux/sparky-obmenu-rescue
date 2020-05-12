@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/04/26 -->
+     Last update 2020/05/12 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -12,7 +12,7 @@
         </action>
       </item>
       <item label="DDRescue GUI" icon='/usr/share/pixmaps/ddrescue-gui.png'>
-        <action name="Execute"><command>/usr/share/ddrescue-gui/DDRescue_GUI.py</command>
+        <action name="Execute"><command>python3 /usr/share/ddrescue-gui/DDRescue_GUI.py</command>
         </action>
       </item>
       <item label="Grsync" icon='/usr/share/icons/Tela/scalable/apps/grsync.svg'>
@@ -180,7 +180,7 @@
         <action name="Execute"><command>gigolo</command>
         </action>
       </item>
-      <item label="rdesktop GUI" icon='/usr/share/pixmaps/grdesktop.png'>
+      <item label="rdesktop GUI" icon='/usr/share/pixmaps/grdesktop/icon.png'>
         <action name="Execute"><command>grdesktop</command>
         </action>
       </item>
@@ -432,6 +432,10 @@
           <action name="Execute"><command>sparky-xterm man apt</command>
           </action>
         </item>
+        <item label="Aptitude" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man aptitude</command>
+          </action>
+        </item>
         <item label="DPKG" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm man dpkg</command>
           </action>
@@ -466,8 +470,8 @@
           <action name="Execute"><command>sparky-xterm man rdesktop</command>
           </action>
         </item>
-        <item label="rdesktop GUI" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
-          <action name="Execute"><command>x-www-browser /usr/share/doc/grdesktop/FAQ.html</command>
+        <item label="rdesktop GUI" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm man grdesktop</command>
           </action>
         </item>
         <item label="Remmina" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
@@ -475,7 +479,7 @@
           </action>
         </item>
         <item label="TeamViewer (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
-          <action name="Execute"><command>x-www-browser https://www.teamviewer.com/en/help/firststeps.aspx</command>
+          <action name="Execute"><command>x-www-browser https://www.teamviewer.com/en/help/documents/</command>
           </action>
         </item>
       </menu>
@@ -502,7 +506,7 @@
         </action>
       </item>
       <item label="Screenshot" icon='/usr/share/icons/Tela/scalable/apps/applets-screenshooter.svg'>
-        <action name="Execute"><command>gscreenshot</command>
+        <action name="Execute"><command>xfce4-screenshooter</command>
         </action>
       </item>
       <item label="Vim" icon='/usr/share/icons/Tela/scalable/apps/gvim.svg'>
@@ -561,7 +565,7 @@
         <action name="Execute"><command>nm-connection-editor</command>
         </action>
       </item>
-      <item label="ObConf" icon='/usr/share/icons/Tela/scalable/apps/obconf.svg'>
+      <item label="Openbox Configuration" icon='/usr/share/icons/Tela/scalable/apps/obconf.svg'>
         <action name="Execute"><command>obconf</command>
         </action>
       </item>
