@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/05/27 -->
+     Last update 2020/09/02 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -291,6 +291,10 @@
         </item>
         <item label="Fdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man fdisk'</command>
+          </action>
+        </item>
+	<item label="fsck" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man fsck'</command>
           </action>
         </item>
         <item label="Gdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
