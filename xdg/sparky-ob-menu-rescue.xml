@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/09/02 -->
+     Last update 2020/11/02 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -150,6 +150,10 @@
     <menu id="monitoring" label="Monitoring" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
       <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
         <action name="Execute"><command>sparky-xterm htop</command>
+        </action>
+      </item>
+      <item label="iotop" icon='/usr/share/icons/Tela/scalable/apps/utilities-terminal.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec iotop</command>
         </action>
       </item>
       <item label="nmon" icon='/usr/share/icons/Tela/scalable/apps/utilities-system-monitor.svg'>
@@ -392,6 +396,10 @@
       <menu id="help-monitoring" label="Monitoring Help" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
         <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man htop'</command>
+          </action>
+        </item>
+        <item label="iotop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man iotop'</command>
           </action>
         </item>
         <item label="inxi" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
