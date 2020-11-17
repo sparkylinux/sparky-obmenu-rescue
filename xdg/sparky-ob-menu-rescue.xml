@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/11/02 -->
+     Last update 2020/11/17 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -51,10 +51,6 @@
         <action name="Execute"><command>remsu sparky-remsu-exec cfdisk</command>
         </action>
       </item>
-      <item label="Disk Manager" icon='/usr/share/icons/Tela/scalable/devices/drive-harddisk.svg'>
-        <action name="Execute"><command>remsu sparky-remsu-exec disk-manager</command>
-        </action>
-      </item>
       <item label="Disk Usage Analyser" icon='/usr/share/icons/Tela/scalable/apps/baobab.svg'>
         <action name="Execute"><command>baobab</command>
         </action>
@@ -65,10 +61,6 @@
       </item>
       <item label="GSmartControl" icon='/usr/share/icons/Tela/scalable/apps/gsmartcontrol.svg'>
         <action name="Execute"><command>remsu sparky-remsu-exec gsmartcontrol</command>
-        </action>
-      </item>
-      <item label="Logical Volume Management" icon='/usr/share/system-config-lvm/pixmaps/lv_icon.png'>
-        <action name="Execute"><command>remsu sparky-remsu-exec system-config-lvm</command>
         </action>
       </item>
       <item label="TestDisk" icon='/usr/share/icons/Tela/scalable/apps/utilities-terminal.svg'>
@@ -285,10 +277,6 @@
           <action name="Execute"><command>sparky-xterm 'man cfdisk'</command>
           </action>
         </item>
-        <item label="Disk Manager" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
-          <action name="Execute"><command>sparky-xterm 'man disk-manager'</command>
-          </action>
-        </item>
         <item label="Disktype" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man disktype'</command>
           </action>
@@ -331,10 +319,6 @@
         </item>
         <item label="Smart-Notifier" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man smart-notifier'</command>
-          </action>
-        </item>
-        <item label="System Config LVM" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
-          <action name="Execute"><command>sparky-xterm 'man system-config-lvm'</command>
           </action>
         </item>
         <item label="TestDisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
@@ -597,8 +581,8 @@
         <action name="Execute"><command>sparky-about</command>
         </action>
       </item>
-      <item label="APTus" icon='/usr/share/icons/Tela/scalable/apps/system-software-install.svg'>
-        <action name="Execute"><command>remsu sparky-aptus</command>
+      <item label="APTus AppCenter" icon='/usr/share/icons/Tela/scalable/apps/system-software-install.svg'>
+        <action name="Execute"><command>remsu sparky-aptus-appcenter</command>
         </action>
       </item>
       <item label="Custom ISO Builder" icon='/usr/share/icons/Tela/scalable/devices/media-cdrom.svg'>
