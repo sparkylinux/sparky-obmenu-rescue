@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/11/17 -->
+     Last update 2020/12/12 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -25,6 +25,10 @@
       </item>
       <item label="qt-fsarchiver" icon='/usr/share/app-install/icons/harddrive2.png'>
         <action name="Execute"><command>/usr/sbin/qt-fsarchiver</command>
+        </action>
+      </item>
+       <item label="Rescuezilla" icon='/usr/share/pixmaps/rescuezilla.svg'>
+        <action name="Execute"><command>remsu sparky-remsu-exec rescuezilla</command>
         </action>
       </item>
     </menu>
