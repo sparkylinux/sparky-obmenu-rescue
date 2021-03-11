@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2020/12/12 -->
+     Last update 2021/03/11 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -57,6 +57,10 @@
       </item>
       <item label="Disk Usage Analyser" icon='/usr/share/icons/Tela/scalable/apps/baobab.svg'>
         <action name="Execute"><command>baobab</command>
+        </action>
+      </item>
+      <item label="Disk Usage" icon='/usr/share/icons/Tela/scalable/devices/drive-harddisk.svg'>
+        <action name="Execute"><command>sparky-xdf</command>
         </action>
       </item>
       <item label="GParted" icon='/usr/share/icons/Tela/scalable/apps/gparted.svg'>
@@ -144,6 +148,10 @@
     <!-- Malware end -->
     <!-- Monitoring -->
     <menu id="monitoring" label="Monitoring" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
+       <item label="Hardware identification system" icon='/usr/share/icons/Tela/scalable/apps/hwinfo.svg'>
+        <action name="Execute"><command>hwinfo</command>
+        </action>
+      </item>
       <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
         <action name="Execute"><command>sparky-xterm htop</command>
         </action>
@@ -158,6 +166,10 @@
       </item>
       <item label="LXtask" icon='/usr/share/icons/Tela/scalable/apps/utilities-system-monitor.svg'>
         <action name="Execute"><command>lxtask</command>
+        </action>
+      </item>
+      <item label="Sparky System" icon='/usr/share/icons/Tela/scalable/apps/hwinfo.svg'>
+        <action name="Execute"><command>sparky-system</command>
         </action>
       </item>
       <item label="top" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
@@ -384,6 +396,10 @@
       <menu id="help-monitoring" label="Monitoring Help" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
         <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man htop'</command>
+          </action>
+        </item>
+        <item label="hwinfo" icon='/usr/share/icons/Tela/scalable/apps/hwinfo.svg'>
+          <action name="Execute"><command>sparky-xterm 'man hwinfo'</command>
           </action>
         </item>
         <item label="iotop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
