@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2021/03/11 -->
+     Last update 2021/03/12.1 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -148,10 +148,6 @@
     <!-- Malware end -->
     <!-- Monitoring -->
     <menu id="monitoring" label="Monitoring" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
-       <item label="Hardware identification system" icon='/usr/share/icons/Tela/scalable/apps/hwinfo.svg'>
-        <action name="Execute"><command>hwinfo</command>
-        </action>
-      </item>
       <item label="htop" icon='/usr/share/icons/Tela/scalable/apps/htop.svg'>
         <action name="Execute"><command>sparky-xterm htop</command>
         </action>
@@ -398,10 +394,6 @@
           <action name="Execute"><command>sparky-xterm 'man htop'</command>
           </action>
         </item>
-        <item label="hwinfo" icon='/usr/share/icons/Tela/scalable/apps/hwinfo.svg'>
-          <action name="Execute"><command>sparky-xterm 'man hwinfo'</command>
-          </action>
-        </item>
         <item label="iotop" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man iotop'</command>
           </action>
@@ -542,7 +534,7 @@
         </action>
       </item>
       <item label="Windows Network" icon='/usr/share/icons/Tela/scalable/places/folder-network.svg'>
-        <action name="Execute"><command>thunar network:///</command>
+        <action name="Execute"><command>pcmanfm network:///</command>
         </action>
       </item>
     </menu>
