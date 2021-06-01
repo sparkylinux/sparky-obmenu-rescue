@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2021/03/12.1 -->
+     Last update 2021/06/01 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -285,6 +285,10 @@
           <action name="Execute"><command>sparky-xterm 'man baobab'</command>
           </action>
         </item>
+        <item label="blkid" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man blkid'</command>
+          </action>
+        </item>
         <item label="Cfdisk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man cfdisk'</command>
           </action>
@@ -311,6 +315,10 @@
         </item>
         <item label="GSmartControl" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man gsmartcontrol'</command>
+          </action>
+        </item>
+        <item label="lsblk" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man lsblk'</command>
           </action>
         </item>
         <item label="LVM2" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
@@ -480,6 +488,17 @@
         </item>
         <item label="TeamViewer (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
           <action name="Execute"><command>x-www-browser https://www.teamviewer.com/en/help/documents/</command>
+          </action>
+        </item>
+      </menu>
+      
+      <menu id="help-system" label="System Help" icon='/usr/share/icons/Tela/scalable/apps/applications-system.svg'>
+        <item label="lscpi" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man lscpi'</command>
+          </action>
+        </item>
+        <item label="lsusb" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man lsusb'</command>
           </action>
         </item>
       </menu>
