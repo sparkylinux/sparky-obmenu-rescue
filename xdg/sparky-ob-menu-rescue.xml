@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2021/06/01 -->
+     Last update 2021/08/03 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -544,8 +544,12 @@
     <!-- Multimedia end -->
     <!-- Network -->
     <menu id="network" label="Network" icon='/usr/share/icons/Tela/scalable/apps/applications-internet.svg'>
-      <item label="HexChat IRC client" icon='/usr/share/icons/Tela/scalable/apps/hexchat.svg'>
+      <item label="HexChat IRC" icon='/usr/share/icons/Tela/scalable/apps/hexchat.svg'>
         <action name="Execute"><command>hexchat</command>
+        </action>
+      </item>
+      <item label="Riseup-VPN" icon='/usr/share/riseup-vpn/icon.svg'>
+        <action name="Execute"><command>riseup-vpn</command>
         </action>
       </item>
       <item label="Web browser" icon='/usr/share/icons/Tela/scalable/apps/web-browser.svg'>
