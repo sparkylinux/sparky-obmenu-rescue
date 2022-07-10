@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2021/08/03 -->
+     Last update 2022/07/10.1 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -23,12 +23,16 @@
         <action name="Execute"><command>luckybackup</command>
         </action>
       </item>
-      <item label="qt-fsarchiver" icon='/usr/share/app-install/icons/harddrive2.png'>
+      <item label="qt-fsarchiver" icon='/usr/share/icons/Tela/scalable/devices/drive-harddisk.svg'>
         <action name="Execute"><command>/usr/sbin/qt-fsarchiver</command>
         </action>
       </item>
-       <item label="Rescuezilla" icon='/usr/share/pixmaps/rescuezilla.svg'>
+      <item label="Rescuezilla" icon='/usr/share/pixmaps/rescuezilla.svg'>
         <action name="Execute"><command>remsu sparky-remsu-exec rescuezilla</command>
+        </action>
+      </item>
+      <item label="Timeshift" icon='/usr/share/icons/Tela/scalable/apps/timeshift.svg'>
+        <action name="Execute"><command>timeshift-launcher</command>
         </action>
       </item>
     </menu>
@@ -258,6 +262,10 @@
         </item>
         <item label="Partimage Server" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
           <action name="Execute"><command>sparky-xterm 'man partimaged'</command>
+          </action>
+        </item>
+        <item label="Timeshift" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
+          <action name="Execute"><command>sparky-xterm 'man timeshift'</command>
           </action>
         </item>
       </menu>
@@ -512,10 +520,6 @@
     </item>
     <!-- Accessories -->
     <menu id="accessories" label="Accessories" icon='/usr/share/icons/Tela/scalable/apps/access.svg'>
-      <item label="Florence Virtual Keyboard" icon='/usr/share/pixmaps/florence.svg'>
-        <action name="Execute"><command>florence</command>
-        </action>
-      </item>
       <item label="Image Viewer" icon='/usr/share/icons/Tela/scalable/apps/gthumb.svg'>
         <action name="Execute"><command>gpicview</command>
         </action>
@@ -530,6 +534,10 @@
       </item>
       <item label="Vim" icon='/usr/share/icons/Tela/scalable/apps/gvim.svg'>
         <action name="Execute"><command>sparky-xterm vim</command>
+        </action>
+      </item>
+      <item label="Virtual Keyboard" icon='/usr/share/icons/Tela/scalable/apps/onboard.svg'>
+        <action name="Execute"><command>onboard</command>
         </action>
       </item>
     </menu>
