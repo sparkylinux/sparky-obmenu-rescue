@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2022/07/10.1 -->
+     Last update 2023/07/07 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -604,10 +604,6 @@
         <action name="Execute"><command>system-config-printer</command>
         </action>
       </item>
-      <item label="Screensaver" icon='/usr/share/icons/Tela/scalable/apps/xscreensaver.svg'>
-        <action name="Execute"><command>xscreensaver-demo</command>
-        </action>
-      </item>
       <item label="Tint2 Config" icon='/usr/share/icons/Tela/scalable/apps/tint2conf.svg'>
         <action name="Execute"><command>tint2conf</command>
         </action>
@@ -669,10 +665,6 @@
   <separator />
     <item label="Restart Openbox" icon='/usr/share/icons/Tela/scalable/apps/system-restart.svg'>
       <action name="Restart"/>
-    </item>
-    <item label="Lock" icon='/usr/share/icons/Tela/scalable/apps/xscreensaver.svg'>
-      <action name="Execute"><command>xscreensaver-command -lock</command>
-      </action>
     </item>
     <item label="Exit" icon='/usr/share/icons/Tela/scalable/apps/system-shutdown.svg'>
       <action name="Execute"><command>wm-logout</command>
