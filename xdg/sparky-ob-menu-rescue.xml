@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2023/07/07 -->
+     Last update 2023/07/26 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -634,6 +634,10 @@
       </item>
       <item label="Live USB Disk Creator" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
         <action name="Execute"><command>remsu sparky-live-usb-creator</command>
+        </action>
+      </item>
+      <item label="Live USB Disk Creator Persistence" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
+        <action name="Execute"><command>remsu sparky-live-usb-creator-persistence</command>
         </action>
       </item>
       <item label="Run command" icon='/usr/share/icons/Tela/scalable/apps/system-run.svg'>
