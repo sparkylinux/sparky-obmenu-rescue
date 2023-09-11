@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2023/07/26 -->
+     Last update 2023/09/11 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -520,8 +520,20 @@
     </item>
     <!-- Accessories -->
     <menu id="accessories" label="Accessories" icon='/usr/share/icons/Tela/scalable/apps/access.svg'>
+      <item label="Gnote" icon='/usr/share/icons/Tela/scalable/apps/gnote.svg'>
+        <action name="Execute"><command>gnote</command>
+        </action>
+      </item>
       <item label="Image Viewer" icon='/usr/share/icons/Tela/scalable/apps/gthumb.svg'>
         <action name="Execute"><command>gpicview</command>
+        </action>
+      </item>
+      <item label="Imager" icon='/usr/share/icons/Tela/scalable/apps/distributor-logo-raspbian.svg'>
+        <action name="Execute"><command>rpi-imager</command>
+        </action>
+      </item>
+      <item label="Parcellite" icon='/usr/share/icons/Tela/scalable/apps/parcellite.svg'>
+        <action name="Execute"><command>parcellite</command>
         </action>
       </item>
       <item label="Text Editor" icon='/usr/share/icons/Tela/scalable/apps/text-editor.svg'>
