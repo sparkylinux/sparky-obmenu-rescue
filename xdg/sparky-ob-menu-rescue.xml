@@ -1,5 +1,5 @@
 <!-- Openbox menu for Sparky Rescue Edition by pavroo <pavroo@onet.eu> 2019/10/19
-     Last update 2023/09/11 -->
+     Last update 2024/07/15 -->
 <openbox_menu>
   <menu id="desktop-app-menu" label="Applications" />
   <menu id="root-menu" label="Openbox 3">
@@ -9,10 +9,6 @@
     <menu id="backup" label="Backup" icon='/usr/share/icons/Tela/scalable/apps/luckybackup.svg'>
       <item label="Clonezilla" icon='/usr/share/icons/Tela/scalable/apps/applications-development.svg'>
         <action name="Execute"><command>remsu sparky-remsu-exec clonezilla</command>
-        </action>
-      </item>
-      <item label="DDRescue GUI" icon='/usr/share/pixmaps/ddrescue-gui.png'>
-        <action name="Execute"><command>python3 /usr/share/ddrescue-gui/DDRescue_GUI.py</command>
         </action>
       </item>
       <item label="Grsync" icon='/usr/share/icons/Tela/scalable/apps/grsync.svg'>
@@ -234,10 +230,6 @@
       <menu id="help-backup" label="Backup Help" icon='/usr/share/icons/Tela/scalable/apps/luckybackup.svg'>
         <item label="Clonezilla (OnLine)" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
           <action name="Execute"><command>x-www-browser http://clonezilla.org/fine-print-live-doc.php?path=./clonezilla-live/doc/01_Save_disk_image/05-start-clonezilla-or-cmd.doc#05-start-clonezilla-or-cmd.doc</command>
-          </action>
-        </item>
-        <item label="DDRescue" icon='/usr/share/icons/Tela/scalable/apps/help-browser.svg'>
-          <action name="Execute"><command>x-www-browser /usr/share/doc/gddrescue/html/index.html</command>
           </action>
         </item>
         <item label="FSArchiver" icon='/usr/share/icons/Tela/scalable/apps/help-info.svg'>
@@ -528,6 +520,10 @@
         <action name="Execute"><command>gpicview</command>
         </action>
       </item>
+      <item label="Orca Screen Reader" icon='/usr/share/icons/Tela/scalable/apps/preferences-desktop-accessibility.svg'>
+        <action name="Execute"><command>orca</command>
+        </action>
+      </item>
       <item label="Imager" icon='/usr/share/icons/Tela/scalable/apps/distributor-logo-raspbian.svg'>
         <action name="Execute"><command>rpi-imager</command>
         </action>
@@ -644,14 +640,6 @@
         <action name="Execute"><command>remsu deb-package-builder</command>
         </action>
       </item>
-      <item label="Live USB Disk Creator" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
-        <action name="Execute"><command>remsu sparky-live-usb-creator</command>
-        </action>
-      </item>
-      <item label="Live USB Disk Creator Persistence" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
-        <action name="Execute"><command>remsu sparky-live-usb-creator-persistence</command>
-        </action>
-      </item>
       <item label="Run command" icon='/usr/share/icons/Tela/scalable/apps/system-run.svg'>
         <action name="Execute"><command>gexec</command>
         </action>
@@ -660,16 +648,12 @@
         <action name="Execute"><command>synaptic-pkexec</command>
         </action>
       </item>
-      <item label="System Log" icon='/usr/share/icons/Tela/scalable/apps/logview.svg'>
-        <action name="Execute"><command>gnome-system-log-pkexec</command>
-        </action>
-      </item>
       <item label="System Profiler and Benchmark" icon='/usr/share/hardinfo/pixmaps/logo.png'>
         <action name="Execute"><command>hardinfo</command>
         </action>
       </item>
-      <item label="USB Disk Formatter" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
-        <action name="Execute"><command>remsu sparky-usb-formatter</command>
+      <item label="USB Disk Imager" icon='/usr/share/icons/Tela/scalable/devices/drive-removable-media-usb-pendrive.svg'>
+        <action name="Execute"><command>sparky-usb-imager</command>
         </action>
       </item>
       <item label="Xkill" icon='/usr/share/icons/Tela/scalable/apps/applications-other.svg'>
